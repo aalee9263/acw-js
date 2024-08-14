@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Alert in BOM</title>
+</head>
+<body>
+    <script>
+        /*
+        window.alert() or alert()
+
+        window.confirm() or confirm()
+        
+        window.prompt() or prompt()
+        */
+
+        // window.alert("Hello World");
+
+        // var userInput = window.confirm("Are you above 18?");
+        // if (userInput)
+        // {
+        //     document.write("Successfully");
+        // }
+        // else 
+        // {
+        //     document.write("Failed");
+        // }
+
+        var userInput = window.prompt("what is your name?", "E.g. Ali")
+        document.write("Welcome!" + userInput);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node Lists</title>
+</head>
+<body>
+    <a id="abc">
+        <span class="abc">a</span>
+        <span class="abc">b</span>
+        <span class="abc">c</span>
+    </a>
+    <br>
+    <a id="xyz">
+        <span class="xyz">x</span>
+        <span class="xyz">y</span>
+        <span class="xyz">z</span>
+    </a>
+
+    <p id="demo">??</p>
+
+    <script>
+        var abc = document.getElementsByClassName("abc");
+        var xyz = document.querySelectorAll(".xyz");
+        
+        document.write(abc.length + " | " + xyz.length);
+
+        var span = document.createElement("span");
+        span.textContent = "link1";
+        span.className = "abc";
+
+        document.getElementById("abc").appendChild(span);
+
+
+        var span2 = document.createElement("span");
+        span2.textContent = "link2";
+        span2.className = "xyz";
+
+        document.getElementById("xyz").appendChild(span2);
+
+        
+        document.write("<br>"+abc.length + " | " + xyz.length);
+    </script>
+
+</body>
+</html>

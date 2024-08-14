@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes</title>
+</head>
+<body>
+    <div id="container">
+        <p id="elem1">a</p>
+        <p id="elem2">b</p>
+        <p id="elem3">c</p>
+    </div>
+    <script>
+        /*
+        document.createElement()
+        elem.createTextNode()
+        parent.appendChild()
+        parent.insertBefore(new, old)
+        parent.remove()
+        parent.removeChild(child)
+        parent.replaceChild(new, old)
+        */
+
+        var a = document.createElement("a");
+        a.href = "facebook.com";
+        a.textContent = "Facebook";
+
+        var elem1 = document.getElementById("elem1");
+        document.getElementById("container").insertBefore(a, elem1);
+        // a.remove();
+        // document.getElementById("container").removeChild(elem3);
+        document.getElementById("container").replaceChild(a, elem1);
+
+        // document.getElementById("container").appendChild(a);
+
+    </script>
+</body>
+</html>

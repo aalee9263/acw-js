@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson1</title>
+    <style>
+        #btn {
+            color: wheat;
+            background-color: crimson;
+            font-size: 18px;
+            padding: 8px;
+        }
+        
+        .para {
+            font-size: 18px;
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="btn">click Me</button>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, hic sequi! Iusto, dignissimos, eius necessitatibus doloribus laboriosam obcaecati facilis nam tempora vero aliquam blanditiis sit nesciunt harum? Odit, quae culpa! 
+    </p>
+<script>
+        var btn = document.getElementById("btn");
+        btn.style.color = "black";
+        btn.style.background = "yellow";
+        btn.style.border = "2px solid brown";
+
+        var para = document.getElementsByClassName("para")[0];
+        para.style.color = "green"
+
+</script>
+
+</body>
+</html>

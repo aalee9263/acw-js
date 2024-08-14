@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen on BOM</title>
+</head>
+<body>
+    
+    <script>
+        /*
+
+        window.screen
+        or screen simple
+        screen.width
+        screen.height
+
+        screen.availWidth = width - interface features
+        screen.availHeight = height - interface featueres like taskbar
+
+        screen.colorDepth
+        screen.pixelDepth
+        Returns the number of bits used to display onen color.
+        All modern computers usues 24 bit or 32 bit hardware for color resolution.
+
+        */
+
+
+        document.write(screen.width + " | " + screen.height+"<br>");
+
+        document.write(window.screen.availWidth + " | "+ window.screen.availHeight+"<br>");
+
+        document.write(window.screen.colorDepth + " | "+ window.screen.pixelDepth+"<br>")
+    </script>
+</body>
+</html>

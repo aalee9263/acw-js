@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson1</title>
+</head>
+<body>
+    <button id="btn">click Me</button>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, hic sequi! Iusto, dignissimos, eius necessitatibus doloribus laboriosam obcaecati facilis nam tempora vero aliquam blanditiis sit nesciunt harum? Odit, quae culpa! 
+    </p>
+    <p class="para">Second Paragraph</p>
+<script>
+        document.getElementById("btn").textContent = "Don't click"
+
+        document.getElementsByClassName("para")[0].textContent = "nothing!";
+
+
+        document.getElementsByTagName("p")[1].textContent = "2 nothing!"
+
+        //this works like css id, hash or tag names, but this "p" always hit 1st index of array
+        document.querySelector("p").textContent = "changed by query Selector"
+
+        document.querySelectorAll(".para")[1].textContent = "changed by querySelectorforAll"
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+    
+
+
+
+
+
+<!-- <button onclick="alert('Hello, World!')"> Click Me </button> -->
+    <script src="array.js"></script>
+    <script src="object.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>

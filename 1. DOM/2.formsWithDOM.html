@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in DOM</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h2>Forms With DOM</h2>
+        <input type="text" id="email" placeholder="Email" > <br> <br>
+        <input type="password" id="pswd" placeholder="Password" > <br> <br>
+        <input type="number" id="age" placeholder="Age" > <br> <br>
+        <input type="submit" id="submit" value="submit"> <br> <br>
+    </form>
+
+    <script>
+            var email = document.getElementById("email");
+            var pswd = document.getElementById("pswd");
+            var age = document.getElementById("age");
+            var submit = document.getElementById("submit");
+
+            submit.onclick = function ()
+            {
+                if (email.value != "" && pswd.value != "" && age.value >=18 && age.value <= 45) 
+                {
+                    document.write("Successfully Submitted");
+                }
+            } 
+    </script>    
+</body>
+</html>

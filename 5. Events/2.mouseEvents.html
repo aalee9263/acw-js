@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Events</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <script>
+        // document.getElementById("btn").onmouseover = function()
+        // {
+        //     alert("mouseover")
+        // }
+        // document.getElementById("btn").onmouseout = function()
+        // {
+        //     alert("mouse out")
+        // }
+        // document.getElementById("btn").onclick = function()
+        // {
+        //     alert("clicked")
+        // }
+        // document.getElementById("btn").onmousedown = function()
+        // {
+        //     alert("mouse down")
+        // }
+        // document.getElementById("btn").onclick = function()
+        // {
+        //     alert("clicked")
+        // }
+
+        ///add event listener
+        function random()
+        {
+            alert("clicked")
+        }
+        document.getElementById("btn").addEventListener("click", random);
+        
+
+    </script>
+</body>
+</html>
