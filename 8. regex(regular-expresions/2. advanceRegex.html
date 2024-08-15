@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name and Phone Number Validation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            width: 100vh;
+            height: 100vh;
+            position: relative;
+        }
+        .form-heading{
+            font-size: 24px;
+            color: rgb(35, 35, 35);
+            text-align: center;
+            margin-bottom: 32px; 
+        }
+        .form {
+            width: 300px;
+            height: 300px;
+            background: rgba(35, 35, 35, alpha0.037);
+            padding: 16px;
+            border: 2px solid rgb(35, 35, 35);
+            border-radius: 16px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px; /* top and left*/
+        }
+
+        .form-input{
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            font-size: 14px;
+            background: rgb(196, 196, 196);
+            color: rgb(35, 35, 35);
+            border-radius: 30px;
+            border: none;
+        }
+        .form-btn{
+            margin-top: 16px;
+            background : rgb(35, 35, 35);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" class="form">
+        <h2 class="form-heading">Login</h2>
+        <input type="text" class="form-input" placeholder="Name"><br>
+        <input type="phone" class="form-input" placeholder="Ph. i.e. 03101234567"><br>
+        <input type="email" class="form-input" placeholder="example@yahoo.com"><br>
+        <input type="text" class="form-input form-btn" value="Login"><br>
+    </form>
+    <script>
+        var btn = document.getElementsByClassName("form-btn")[0];
+        var input = document.getElementsByClassName("form-input");
+
+        btn.onclick = function()
+        {
+            var regexAlphabets = /^[A-Za-z]+$/;
+            var regexPhone = /^\d{11}$/;
+            var regexEmail = /^\S+@\S+\.\S+$/;
+
+            if(input[0].value == "" || input[1].value == "" || input[2].value == "")
+            {
+                alert("All fields are required");       
+            }
+
+            else if(input[0].value.match(regexAlphabets) &&
+                 (input[1].value.match(regexPhone)) &&
+                 (input[2].value.match(regexEmail)))
+            {
+                alert("Everything is correct");
+            } 
+            else 
+            {
+                alert("Every field must be filled in correct format");
+            }
+        }
+
+    </script>
+</body>
+</html>
