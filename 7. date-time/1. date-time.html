@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <p id="time"></p>
+    <script>
+
+        // var d = new Date();
+        // alert(d);
+        // document.write(d);
+        // alert(d.getDate()); // 15
+        // alert(d.getDate()); // 15 to get date in this format
+        // alert(d.getDate()+"-"+d.getMonth()+"-"+d.getFullYear()); // 15-08-2024 to get date in this format
+        // alert(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+        // document.write(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+        //above all date and time is static
+        //now under mention code for dynamic time change on every second
+
+        setInterval(function()
+        {
+            var d = new Date();
+            document.getElementById("time").textContent = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        },1000);
+
+    </script>
+</body>
+</html>
