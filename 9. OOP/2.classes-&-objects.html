@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Classes</title>
+</head>
+<body>
+    <script>
+/*        class bike{
+            model = "2019";
+            make = "honda";
+        };
+
+
+        var bike1 = new bike();
+        bike1.make = "Suzuki"
+        console.log(bike1)
+        class bike{
+            model = "2019";
+            make = "honda";
+        };
+
+*/
+        // now will use function in the class object
+        class bike{
+            model = "2019";
+            make = "honda";
+
+            getModel(){
+                return this.model
+            }
+        };
+        var bike1 = new bike();
+
+        console.log(bike1.getModel())
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects Prototype</title>
+</head>
+<body>
+    <script>
+        //this is how we make objects in javascript
+        // var obj = {
+        //     field1: "value1",
+        //     field2: "value2",
+        //     field3: "value3",
+        //     field4: "value4",
+        //     field5: "value5"
+        // }
+
+        // but now we will study objects in more way like functions
+
+        function car()
+        {
+            this.model = "2023";
+            this.make = "honda";
+            
+        }
+
+        car.prototype.price = "5555";
+
+
+        var car1 = new car();
+        car1.model = "2022"
+        console.log(car1.price)
+    </script>
+</body>
+</html>

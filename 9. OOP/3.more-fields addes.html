@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Classes</title>
+</head>
+<body>
+    <script>
+            class bike{
+            model = "2019";
+            make = "honda";
+            price = "100000";
+
+            // getter mothods
+            getModel(){
+                return this.model
+            }
+            getMake(){
+                return this.make
+            }
+            getPrie(){
+                return this.price
+            }
+
+            // setter methods
+            setModel(upcomingModel){
+                this.model = upcomingModel;
+            }
+            setMake(upcomingMake){
+                this.make = upcomingMake;
+            }
+            setPrice(upcomingPrice){
+                this.price = upcomingPrice;
+            }
+
+            toString()
+            {
+                return "Model: "+this.model+", Make: "+this.make+", Price: "+this.price
+            }
+        };
+
+        var bike1 = new bike();
+        bike1.setModel("Suzuki")
+        bike1.setMake("2024")
+        bike1.setPrice("500")
+        console.log(bike1.getModel());
+        console.log(bike1.getMake());
+        console.log(bike1.getPrie());
+        console.log(bike1.toString())
+
+    </script>
+</body>
+</html>

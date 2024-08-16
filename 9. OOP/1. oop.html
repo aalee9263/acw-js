@@ -7,7 +7,26 @@
 </head>
 <body>
     <script>
-        
+        class Cat {
+            name = "Eye";
+            color = "white and brown"
+            walk()
+            {
+                document.write("walking")
+            } 
+            yawn()
+            {
+                document.write("yawns")
+            } 
+        }        
+
+        var c1 = new Cat();
+        c1.walk();
+        // c1.yawn();
+        //if we assign variable
+
+        c1.color = "black"
+        document.write(c1.color)
     </script>
 </body>
 </html>
